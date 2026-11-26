@@ -17,10 +17,11 @@ var AUVP = (function () {
     : ((typeof chrome !== 'undefined' && chrome && chrome.storage) ? chrome : null);
 
   var META = {
-    version: '1.0.0',
+    version: '1.0.1',
     originalAuthor: 'Matheus Satake de Souza',
     originalStoreUrl: 'https://chromewebstore.google.com/detail/auvp-play/akjmabmimndjlnbgficabihjclinbpdc',
-    auvpSite: 'https://auvp.com.br/',
+    ctaUrl: 'https://auvp.net/?id=AUVP25-I7I5T',
+    ctaNote: 'Link de indicação do mantenedor desta versão',
     creditLine: 'Baseado na extensão original para Chrome criada por Matheus Satake de Souza'
   };
 

@@ -352,6 +352,19 @@ html[dark] #auvp-play-shelf .auvp-warn { color: #fb923c; }
   text-decoration: none;
 }
 
+/* "Seja aluno" no canto superior direito, ao lado dos demais controles */
+#auvp-play-shelf .auvp-head .auvp-cta {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 16px;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: filter .12s ease;
+}
+
+#auvp-play-shelf .auvp-head .auvp-cta:hover { filter: brightness(1.08); }
+
 /* ---------- aviso flutuante ---------- */
 .auvp-toast {
   position: fixed;

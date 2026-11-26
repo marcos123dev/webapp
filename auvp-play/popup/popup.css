@@ -170,4 +170,16 @@ dd { margin: 1px 0 0 0; font-size: 13px; font-weight: 600; }
   text-decoration: none;
 }
 
+/* "Seja aluno" no canto superior direito do cabeçalho */
+.head .cta {
+  margin-left: auto;
+  flex: 0 0 auto;
+  align-self: center;
+  font-size: 12px;
+  padding: 7px 14px;
+  white-space: nowrap;
+}
+
+.head .cta:hover { filter: brightness(1.08); }
+
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }

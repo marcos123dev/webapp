@@ -447,9 +447,18 @@
       }
     });
 
+    var cta = el('a', {
+      class: 'auvp-cta',
+      href: AUVP.META.ctaUrl,
+      target: '_blank',
+      rel: 'noopener noreferrer',
+      title: AUVP.META.ctaNote,
+      text: 'Seja aluno'
+    });
+
     var head = el('header', { class: 'auvp-head' }, [
       brand,
-      el('div', { class: 'auvp-actions' }, [search, sort, btnRefresh, btnPlayAll, btnLater, btnCollapse])
+      el('div', { class: 'auvp-actions' }, [search, sort, btnRefresh, btnPlayAll, btnLater, btnCollapse, cta])
     ]);
     root.appendChild(head);
 
@@ -553,14 +562,7 @@
           href: AUVP.META.originalStoreUrl,
           target: '_blank',
           rel: 'noopener noreferrer',
-          text: 'extensão original'
-        }),
-        el('a', {
-          class: 'auvp-link auvp-cta',
-          href: AUVP.META.auvpSite,
-          target: '_blank',
-          rel: 'noopener noreferrer',
-          text: 'Seja aluno'
+          text: 'extensão original no Chrome'
         })
       ])
     ]));

@@ -172,7 +172,9 @@
     $('version').textContent = 'v' + AUVP.META.version;
     $('credit').textContent = AUVP.META.creditLine + '.';
     $('link-original').href = AUVP.META.originalStoreUrl;
-    $('link-auvp').href = AUVP.META.auvpSite;
+    var cta = $('link-auvp');
+    cta.href = AUVP.META.ctaUrl;
+    cta.title = AUVP.META.ctaNote;
   }
 
   function openTab(url) {

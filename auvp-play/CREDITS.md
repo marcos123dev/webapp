@@ -20,9 +20,11 @@ Este é um **port independente e não oficial para o Mozilla Firefox**.
 - É uma reimplementação (reconstrução) das funcionalidades, não uma cópia do pacote.
 - Não há qualquer vínculo com o autor original, com a AUVP, com a AUVP Capital ou com
   os canais do YouTube citados.
-- O link "Seja aluno" aponta para o site público da AUVP **sem nenhum código de
-  indicação/afiliado**. O código de indicação da extensão original pertence ao autor
-  original e não foi reproduzido aqui.
+- O botão "Seja aluno" usa o **link de indicação do mantenedor desta versão para
+  Firefox**, e não o do autor original — o código de indicação dele pertence a ele e
+  não foi reproduzido aqui. Se alguém se inscrever na AUVP por esse botão, quem pode
+  receber comissão é o mantenedor desta versão. O botão só abre quando clicado, está
+  identificado como tal e não há redirecionamento automático em nenhuma situação.
 
 ## Marcas
 

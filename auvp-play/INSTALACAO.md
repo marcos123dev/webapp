@@ -7,7 +7,7 @@ Depois, se gostar, faça a **Parte 2** para deixar instalado para sempre.
 
 ## Antes de começar
 
-Você recebeu um arquivo chamado **`auvp-play-firefox-1.0.0.xpi`**.
+Você recebeu um arquivo chamado **`auvp-play-1.0.1.xpi`**.
 Guarde ele numa pasta fácil de achar, por exemplo a pasta **Downloads**.
 
 Esse arquivo é a extensão inteira. Não precisa descompactar, não precisa abrir.
@@ -35,7 +35,7 @@ Esse jeito funciona na hora, mas a extensão **some quando você fecha o Firefox
    **"Este Firefox"**.
 4. Clique no botão **"Carregar extensão temporária…"**.
 5. Vai abrir a janela de escolher arquivo. Procure a pasta onde você salvou e
-   clique duas vezes em **`auvp-play-firefox-1.0.0.xpi`**.
+   clique duas vezes em **`auvp-play-1.0.1.xpi`**.
 6. Pronto. A extensão aparece na lista e o ícone dela (um quadrado verde-azulado com um
    "play") aparece na barra de ferramentas do Firefox, lá em cima à direita.
 
@@ -66,7 +66,7 @@ O Firefox só aceita instalar extensões **assinadas pela Mozilla**. A assinatur
 
    > Isso significa "não quero publicar na loja, só quero o arquivo assinado para mim".
 3. Clique em **"Selecione um arquivo…"** e escolha o mesmo arquivo
-   **`auvp-play-firefox-1.0.0.xpi`**.
+   **`auvp-play-1.0.1.xpi`**.
 4. Espere a validação automática terminar (costuma levar menos de um minuto).
    Avisos amarelos são normais; o que importa é não ter erro vermelho.
 5. Clique em **Continuar** e depois em **Enviar versão**.

@@ -18,7 +18,7 @@ filtros, ordenação e controle de Shorts.
 ## Como instalar
 
 **Baixe o arquivo assinado:**
-👉 **[Página de download (Releases)](https://github.com/marcos123dev/webapp/releases/latest)** — ou [link direto do arquivo](https://github.com/marcos123dev/webapp/raw/main/auvp-play/dist/auvp-play-1.0.0.xpi)
+👉 **[Página de download (Releases)](https://github.com/marcos123dev/webapp/releases/latest)**
 
 Depois, no Firefox: menu **☰** → **Extensões e temas** → **engrenagem ⚙** →
 **"Instalar extensão a partir de arquivo…"** → escolha o `.xpi` baixado → **Adicionar**.
@@ -46,6 +46,7 @@ O passo a passo detalhado, em linguagem simples e com solução de problemas, es
 | Ocultar Shorts | Remove prateleiras, itens e atalhos de Shorts do YouTube |
 | Abrir Shorts como vídeo | Links `/shorts` passam a abrir no player normal |
 | Contador no ícone | Mostra quantos vídeos da AUVP ainda não foram assistidos |
+| Botão "Seja aluno" | Atalho no canto superior direito para o formulário da AUVP (link de indicação do mantenedor) |
 
 Tudo é ligado e desligado pelo ícone da extensão, na barra do Firefox.
 
@@ -58,6 +59,9 @@ Tudo é ligado e desligado pelo ícone da extensão, na barra do Firefox.
 - As preferências, a lista "assistir depois" e o histórico de assistidos ficam
   **somente no seu computador** (`storage.local` do Firefox).
 - A extensão só roda em páginas do `youtube.com`.
+- **Link de indicação:** o botão "Seja aluno" leva a um formulário da AUVP com o código
+  de indicação do mantenedor desta versão. Ele só abre quando você clica, nada é enviado
+  sem a sua ação e nenhuma outra parte da extensão depende disso.
 - Permissões usadas: `storage` (salvar preferências), `alarms` (atualizar
   periodicamente), `clipboardWrite` (copiar link) e acesso a `youtube.com`.
 
@@ -78,8 +82,9 @@ e sem depender de APIs internas e instáveis do YouTube:
 4. **O feed público não separa Shorts de vídeos normais**, então um Short eventualmente
    pode aparecer na prateleira. A opção "Ocultar Shorts" continua valendo para o
    restante do YouTube.
-5. **Sem código de indicação.** O botão "Seja aluno" leva ao site público da AUVP, sem
-   o link de afiliado do autor original, que pertence a ele.
+5. **Link de indicação próprio.** O botão "Seja aluno", no canto superior direito, usa o
+   link de indicação do mantenedor desta versão — não o do autor original, que pertence
+   a ele. Veja a observação sobre isso logo abaixo, em Privacidade.
 
 ## Estrutura do projeto
 
