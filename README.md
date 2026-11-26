@@ -15,6 +15,7 @@ original para Chrome "AUVP Play", criada por Matheus Satake de Souza**
 ([página na Chrome Web Store](https://chromewebstore.google.com/detail/auvp-play/akjmabmimndjlnbgficabihjclinbpdc)).
 Versão **não oficial**, sem vínculo com o autor original, com a AUVP ou com os canais citados.
 
+- ⬇️ **[Baixar a extensão (versão assinada pela Mozilla)](https://github.com/marcos123dev/webapp/releases/latest)**
 - 📘 [Como instalar, passo a passo](auvp-play/INSTALACAO.md)
 - 📄 [Documentação do projeto](auvp-play/README.md)
 - 🙏 [Créditos](auvp-play/CREDITS.md)

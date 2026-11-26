@@ -17,25 +17,17 @@ filtros, ordenação e controle de Shorts.
 
 ## Como instalar
 
-O passo a passo completo, em linguagem simples, está em **[INSTALACAO.md](INSTALACAO.md)**.
-Em resumo, há dois caminhos:
+**Baixe o arquivo assinado na página de versões:**
+👉 **[github.com/marcos123dev/webapp/releases/latest](https://github.com/marcos123dev/webapp/releases/latest)**
 
-**Teste rápido (dura até você fechar o Firefox)**
-Baixe [`dist/auvp-play-1.0.0-sem-assinatura.xpi`](dist/auvp-play-1.0.0-sem-assinatura.xpi),
-abra `about:debugging` no Firefox → **"Este Firefox"** → **"Carregar extensão temporária…"**
-→ escolha o arquivo.
+Depois, no Firefox: menu **☰** → **Extensões e temas** → **engrenagem ⚙** →
+**"Instalar extensão a partir de arquivo…"** → escolha o `.xpi` baixado → **Adicionar**.
 
-**Instalação permanente**
-O Firefox só instala de forma permanente extensões assinadas pela Mozilla, e o arquivo
-deste repositório não é assinado. Você tem duas opções:
+O arquivo é assinado pela Mozilla, então instala de forma permanente, como qualquer
+outra extensão. Requer **Firefox 142 ou mais recente**.
 
-1. Baixar o arquivo assinado, caso haja um publicado na aba **Releases** deste repositório.
-2. Assinar você mesmo, de graça e em poucos minutos: é a **Parte 2** do
-   [INSTALACAO.md](INSTALACAO.md). Você envia o `.xpi` para a sua própria conta na Mozilla,
-   marcando "Por conta própria", e ela devolve o arquivo assinado. A extensão fica privada,
-   não vai para a loja pública.
-
-Requer **Firefox 142 ou mais recente**.
+O passo a passo detalhado, em linguagem simples e com solução de problemas, está em
+**[INSTALACAO.md](INSTALACAO.md)**.
 
 ## O que a extensão faz
 
