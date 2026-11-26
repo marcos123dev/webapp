@@ -1,8 +1,8 @@
 /*
- * AUVP Play para Firefox (não oficial) — lógica do popup
+ * AUVP Tube — lógica do popup
  *
- * Port independente para Firefox, baseado na extensão original para Chrome
- * "AUVP Play", criada por Matheus Satake de Souza.
+ * Extensão independente para Firefox, inspirada na extensão AUVP Play para
+ * Chrome, de Matheus Satake de Souza. Código escrito do zero.
  *
  * Sem scripts nem estilos embutidos no HTML: compatível com a CSP padrão
  * das extensões em Manifest V3.

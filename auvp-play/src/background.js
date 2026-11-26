@@ -1,8 +1,8 @@
 /*
- * AUVP Play para Firefox (não oficial) — script de fundo
+ * AUVP Tube — script de fundo
  *
- * Port independente para Firefox, baseado na extensão original para Chrome
- * "AUVP Play", criada por Matheus Satake de Souza.
+ * Extensão independente para Firefox, inspirada na extensão AUVP Play para
+ * Chrome, de Matheus Satake de Souza. Código escrito do zero.
  *
  * Responsabilidades:
  *  - gravar as configurações padrão na instalação;

@@ -33,7 +33,7 @@ outra extensão. Você não precisa criar conta em lugar nenhum.
 Pronto. Abra o **youtube.com** e a prateleira da AUVP aparece no topo da página inicial.
 
 > **O ícone não apareceu na barra?** Clique na peça de quebra-cabeça 🧩 ao lado da barra
-> de endereço, ache "AUVP Play" e clique no alfinete para fixar.
+> de endereço, ache "AUVP Tube" e clique no alfinete para fixar.
 
 ---
 
@@ -62,7 +62,7 @@ as recomendações normais do YouTube.
 |---|---|
 | A prateleira não aparece | Atualize a página do YouTube (tecla **F5**). Confirme que está na página inicial do `youtube.com`. |
 | Aparece "Nenhum vídeo carregado" | Clique em **Atualizar** na prateleira, ou abra o ícone da extensão e clique em **Atualizar vídeos**. |
-| O ícone sumiu da barra | Clique na peça 🧩 ao lado da barra de endereço, ache "AUVP Play" e fixe na barra. |
+| O ícone sumiu da barra | Clique na peça 🧩 ao lado da barra de endereço, ache "AUVP Tube" e fixe na barra. |
 | As recomendações sumiram e eu não quis isso | Abra o ícone da extensão e desmarque **"Ocultar o feed de recomendações"**. |
 | O Firefox diz que a extensão não pôde ser verificada | Você provavelmente baixou um arquivo diferente. Use o link do passo 1. |
 | Meu Firefox é mais antigo que o 142 | Atualize o Firefox: menu **☰** → **Ajuda** → **Sobre o Firefox**. |
@@ -75,7 +75,7 @@ suas preferências e a sua lista de "assistir depois" são mantidas.
 
 ## Como desinstalar
 
-Menu **☰** → **Extensões e temas** → ache **AUVP Play (não oficial)** → botão **…** →
+Menu **☰** → **Extensões e temas** → ache **AUVP Tube** → botão **…** →
 **Remover**.
 
 ---
@@ -89,5 +89,5 @@ gerado com `web-ext build`.
 
 ---
 
-*Baseado na extensão original para Chrome criada por Matheus Satake de Souza.
-Versão não oficial para Firefox. Veja [CREDITS.md](CREDITS.md).*
+*AUVP Tube — extensão independente para Firefox, inspirada na AUVP Play para Chrome,
+de Matheus Satake de Souza. Não oficial. Veja [CREDITS.md](CREDITS.md).*

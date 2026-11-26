@@ -1,8 +1,8 @@
 /*
- * AUVP Play para Firefox (não oficial) — estilos da prateleira no YouTube
+ * AUVP Tube — estilos da prateleira no YouTube
  *
- * Port independente para Firefox, baseado na extensão original para Chrome
- * "AUVP Play", criada por Matheus Satake de Souza.
+ * Extensão independente para Firefox, inspirada na extensão AUVP Play para
+ * Chrome, de Matheus Satake de Souza. Código escrito do zero.
  *
  * CSS injetado pela extensão (não é afetado pela CSP da página).
  * Suporta o tema claro e o tema escuro do YouTube.

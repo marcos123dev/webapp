@@ -1,8 +1,8 @@
 /*
- * AUVP Play para Firefox (não oficial) — módulo comum
+ * AUVP Tube — módulo comum
  *
- * Port independente para Firefox, baseado na extensão original para Chrome
- * "AUVP Play", criada por Matheus Satake de Souza.
+ * Extensão independente para Firefox, inspirada na extensão AUVP Play para
+ * Chrome, de Matheus Satake de Souza. Código escrito do zero.
  * Este arquivo foi escrito do zero: nenhum código da extensão original foi copiado.
  *
  * Observação técnica: a página do YouTube aplica "Trusted Types", que bloqueia
@@ -22,7 +22,7 @@ var AUVP = (function () {
     originalStoreUrl: 'https://chromewebstore.google.com/detail/auvp-play/akjmabmimndjlnbgficabihjclinbpdc',
     ctaUrl: 'https://auvp.net/?id=AUVP25-I7I5T',
     ctaNote: 'Link de indicação do mantenedor desta versão',
-    creditLine: 'Baseado na extensão original para Chrome criada por Matheus Satake de Souza'
+    creditLine: 'Inspirado na extensão AUVP Play para Chrome, de Matheus Satake de Souza'
   };
 
   /* Canais da AUVP. Os IDs foram verificados diretamente no YouTube;

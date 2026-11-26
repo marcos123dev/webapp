@@ -1,24 +1,25 @@
-# AUVP Play para Firefox (não oficial)
-
-> Na lista de extensões do navegador ela aparece como **"AUVP Play (não oficial)"** — a
-> Mozilla não permite as palavras "Firefox" ou "Mozilla" no nome de nenhuma extensão.
+# AUVP Tube
 
 Reúne os vídeos mais recentes dos canais **Investidor Sardinha**, **AUVP Capital**,
 **AUVP Agro** e **AUVP Atlas** no topo da página inicial do YouTube, com busca,
 filtros, ordenação e controle de Shorts.
 
-> **Créditos:** baseado na extensão original para Chrome **AUVP Play**, criada por
-> **Matheus Satake de Souza**
+> **Inspiração:** a ideia veio da extensão **AUVP Play**, criada por **Matheus Satake de
+> Souza** para o Chrome
 > (<https://chromewebstore.google.com/detail/auvp-play/akjmabmimndjlnbgficabihjclinbpdc>).
-> Este é um port independente e **não oficial** para Firefox, com o código escrito
-> do zero. Detalhes em [CREDITS.md](CREDITS.md).
+> O AUVP Tube é uma extensão independente e **não oficial** para Firefox, com o código
+> escrito do zero. Detalhes em [CREDITS.md](CREDITS.md).
 
 ---
 
 ## Como instalar
 
 **Baixe o arquivo assinado:**
-👉 **[auvp-play-1.0.1.xpi](https://github.com/marcos123dev/webapp/raw/main/auvp-play/dist/auvp-play-1.0.1.xpi)** — ou pela [página de Releases](https://github.com/marcos123dev/webapp/releases/latest)
+👉 **[auvp-play-1.0.1.xpi](https://github.com/marcos123dev/webapp/raw/main/auvp-play/dist/auvp-play-1.0.1.xpi)**
+
+> Esta é a versão 1.0.1, assinada pela Mozilla e publicada antes da extensão passar a se
+> chamar AUVP Tube. Ela funciona normalmente. Assim que a publicação na loja da Mozilla
+> sair, o download passa a ser por lá, com atualização automática.
 
 Depois, no Firefox: menu **☰** → **Extensões e temas** → **engrenagem ⚙** →
 **"Instalar extensão a partir de arquivo…"** → escolha o `.xpi` baixado → **Adicionar**.
@@ -65,6 +66,7 @@ Ideia, conceito e extensão original para Chrome: **Matheus Satake de Souza** (v
 - As preferências, a lista "assistir depois" e o histórico de assistidos ficam
   **somente no seu computador** (`storage.local` do Firefox).
 - A extensão só roda em páginas do `youtube.com`.
+- Política de privacidade completa: [PRIVACIDADE.md](PRIVACIDADE.md).
 - **Link de indicação:** o botão "Seja aluno" leva a um formulário da AUVP com o código
   de indicação do mantenedor desta versão. Ele só abre quando você clica, nada é enviado
   sem a sua ação e nenhuma outra parte da extensão depende disso.
@@ -108,7 +110,8 @@ auvp-play-firefox/
 │   └── popup.js
 ├── icons/               Ícones originais (PNG 16/32/48/96/128 + SVG)
 ├── README.md
-├── CREDITS.md           Créditos ao autor original
+├── CREDITS.md           Créditos e inspiração
+├── PRIVACIDADE.md       Política de privacidade
 ├── INSTALACAO.md        Guia passo a passo
 └── LICENSE
 ```

@@ -1,8 +1,8 @@
 /*
- * AUVP Play para Firefox (não oficial) — script de conteúdo
+ * AUVP Tube — script de conteúdo
  *
- * Port independente para Firefox, baseado na extensão original para Chrome
- * "AUVP Play", criada por Matheus Satake de Souza.
+ * Extensão independente para Firefox, inspirada na extensão AUVP Play para
+ * Chrome, de Matheus Satake de Souza. Código escrito do zero.
  *
  * Toda a interface é construída com createElement/textContent e estilizada
  * pelo content.css. Nenhum uso de innerHTML, eval ou script inline:
@@ -365,7 +365,7 @@
     /* ---- cabeçalho ---- */
     var brand = el('div', { class: 'auvp-brand' }, [
       el('span', { class: 'auvp-logo', 'aria-hidden': 'true' }),
-      el('span', { class: 'auvp-brand-name', text: 'AUVP Play' }),
+      el('span', { class: 'auvp-brand-name', text: 'AUVP Tube' }),
       el('span', {
         class: 'auvp-count',
         text: filtered.length + (filtered.length === 1 ? ' vídeo' : ' vídeos')
