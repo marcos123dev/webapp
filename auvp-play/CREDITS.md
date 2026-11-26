@@ -37,6 +37,12 @@ canais de seus respectivos titulares. "YouTube" é marca do Google LLC. Este pro
 Se o autor original ou qualquer titular de direitos quiser que esta versão deixe de
 circular, basta pedir: o projeto é de uso pessoal e deve ser excluído a pedido.
 
+## Autoria desta versão
+
+O código desta versão para Firefox foi escrito e é mantido por **marcos123dev**
+(<https://github.com/marcos123dev>). A autoria da ideia e da extensão original
+continua sendo de Matheus Satake de Souza, como descrito acima.
+
 ## Código novo
 
 O código escrito especificamente para este port é distribuído sob a licença MIT

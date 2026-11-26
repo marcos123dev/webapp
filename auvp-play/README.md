@@ -50,6 +50,12 @@ O passo a passo detalhado, em linguagem simples e com solução de problemas, es
 
 Tudo é ligado e desligado pelo ícone da extensão, na barra do Firefox.
 
+## Autoria
+
+Código desta versão para Firefox: **marcos123dev**.
+Ideia, conceito e extensão original para Chrome: **Matheus Satake de Souza** (veja
+[CREDITS.md](CREDITS.md)).
+
 ## Privacidade
 
 - **Nenhum dado é coletado, enviado ou compartilhado.** Não há servidor próprio,

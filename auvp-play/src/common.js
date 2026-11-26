@@ -17,7 +17,7 @@ var AUVP = (function () {
     : ((typeof chrome !== 'undefined' && chrome && chrome.storage) ? chrome : null);
 
   var META = {
-    version: '1.0.1',
+    version: '1.0.2',
     originalAuthor: 'Matheus Satake de Souza',
     originalStoreUrl: 'https://chromewebstore.google.com/detail/auvp-play/akjmabmimndjlnbgficabihjclinbpdc',
     ctaUrl: 'https://auvp.net/?id=AUVP25-I7I5T',

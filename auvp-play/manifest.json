@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
   "name": "AUVP Play (não oficial)",
-  "version": "1.0.1",
-  "author": "Matheus Satake de Souza (autor da extensão original para Chrome) — versão não oficial",
+  "version": "1.0.2",
+  "author": "marcos123dev",
   "description": "Vídeos dos canais Investidor Sardinha, AUVP Capital, AUVP Agro e AUVP Atlas no topo da home do YouTube, com busca, filtros e controle de Shorts. Versão não oficial baseada na extensão original para Chrome de Matheus Satake de Souza.",
-  "homepage_url": "https://chromewebstore.google.com/detail/auvp-play/akjmabmimndjlnbgficabihjclinbpdc",
+  "homepage_url": "https://github.com/marcos123dev/webapp/tree/main/auvp-play",
   "browser_specific_settings": {
     "gecko": {
       "id": "auvp-play-unofficial@local.addon",
