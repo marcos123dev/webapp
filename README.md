@@ -4,7 +4,7 @@ Web apps e extensões de navegador.
 
 ## Projetos
 
-### [`auvp-play/`](auvp-play/) — AUVP Tube (extensão para Firefox)
+### [`auvp-tube/`](auvp-tube/) — AUVP Tube (extensão para Firefox)
 
 Extensão que reúne os vídeos mais recentes dos canais **Investidor Sardinha**,
 **AUVP Capital**, **AUVP Agro** e **AUVP Atlas** no topo da página inicial do YouTube,
@@ -15,9 +15,9 @@ extensão AUVP Play para Chrome, de Matheus Satake de Souza**
 ([página na Chrome Web Store](https://chromewebstore.google.com/detail/auvp-play/akjmabmimndjlnbgficabihjclinbpdc)).
 Versão **não oficial**, sem vínculo com o autor original, com a AUVP ou com os canais citados.
 
-- ⬇️ **[Baixar a extensão v1.0.1 (assinada pela Mozilla)](https://github.com/marcos123dev/webapp/raw/main/auvp-play/dist/auvp-play-1.0.1.xpi)**
-- 📘 [Como instalar, passo a passo](auvp-play/INSTALACAO.md)
-- 📄 [Documentação do projeto](auvp-play/README.md)
-- 🙏 [Créditos e inspiração](auvp-play/CREDITS.md)
-- 🔒 [Política de privacidade](auvp-play/PRIVACIDADE.md)
-- ⚖️ Licença MIT para o código novo — veja [auvp-play/LICENSE](auvp-play/LICENSE)
+- ⬇️ Em publicação na loja da Mozilla — o link de instalação entra aqui assim que sair
+- 📘 [Como instalar, passo a passo](auvp-tube/INSTALACAO.md)
+- 📄 [Documentação do projeto](auvp-tube/README.md)
+- 🙏 [Créditos e inspiração](auvp-tube/CREDITS.md)
+- 🔒 [Política de privacidade](auvp-tube/PRIVACIDADE.md)
+- ⚖️ Licença MIT para o código novo — veja [auvp-tube/LICENSE](auvp-tube/LICENSE)

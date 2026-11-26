@@ -62,7 +62,7 @@ Não há. Nenhum dado é vendido, cedido ou compartilhado, porque nenhum dado é
 ## Código aberto
 
 O código-fonte completo está publicado e pode ser auditado por qualquer pessoa:
-<https://github.com/marcos123dev/webapp/tree/main/auvp-play>
+<https://github.com/marcos123dev/webapp/tree/main/auvp-tube>
 
 ## Contato
 

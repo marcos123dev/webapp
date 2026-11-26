@@ -16,7 +16,7 @@
   window.__auvpPlayLoaded = true;
 
   var api = AUVP.api;
-  var SHELF_ID = 'auvp-play-shelf';
+  var SHELF_ID = 'auvp-tube-shelf';
   var FLAG_CACHE = 'auvpPlayFlags';
 
   var state = {

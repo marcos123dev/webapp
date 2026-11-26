@@ -14,10 +14,9 @@ outra extensão. Você não precisa criar conta em lugar nenhum.
 
 ## Instalar
 
-1. **Baixe o arquivo.** Clique aqui:
-   [**auvp-play-1.0.1.xpi**](https://github.com/marcos123dev/webapp/raw/main/auvp-play/dist/auvp-play-1.0.1.xpi)
-
-   O Firefox vai salvar o arquivo na sua pasta de downloads.
+1. **Baixe o arquivo.** O AUVP Tube está em processo de publicação na loja da Mozilla.
+   Assim que sair, o link de download aparece aqui e no
+   [README](README.md).
 
 2. **Abra as extensões.** No Firefox, clique no menu **☰** (três risquinhos, canto
    superior direito) e depois em **"Extensões e temas"**.
@@ -25,7 +24,7 @@ outra extensão. Você não precisa criar conta em lugar nenhum.
 3. **Instale pelo arquivo.** Clique na **engrenagem ⚙** no topo da página e escolha
    **"Instalar extensão a partir de arquivo…"**.
 
-4. **Escolha o arquivo** `auvp-play-1.0.1.xpi` que você acabou de baixar.
+4. **Escolha o arquivo** `.xpi` que você acabou de baixar.
 
 5. O Firefox mostra as permissões e pergunta se você quer adicionar. Clique em
    **Adicionar** e depois em **OK**.

@@ -14,18 +14,12 @@ filtros, ordenação e controle de Shorts.
 
 ## Como instalar
 
-**Baixe o arquivo assinado:**
-👉 **[auvp-play-1.0.1.xpi](https://github.com/marcos123dev/webapp/raw/main/auvp-play/dist/auvp-play-1.0.1.xpi)**
+**Em publicação na loja da Mozilla.** Assim que sair, o link de instalação aparece aqui —
+e a partir dele a extensão passa a se atualizar sozinha.
 
-> Esta é a versão 1.0.1, assinada pela Mozilla e publicada antes da extensão passar a se
-> chamar AUVP Tube. Ela funciona normalmente. Assim que a publicação na loja da Mozilla
-> sair, o download passa a ser por lá, com atualização automática.
-
-Depois, no Firefox: menu **☰** → **Extensões e temas** → **engrenagem ⚙** →
-**"Instalar extensão a partir de arquivo…"** → escolha o `.xpi` baixado → **Adicionar**.
-
-O arquivo é assinado pela Mozilla, então instala de forma permanente, como qualquer
-outra extensão. Requer **Firefox 142 ou mais recente**.
+Enquanto a publicação não sai, quem quiser testar pode carregar o código direto:
+`about:debugging` → **"Este Firefox"** → **"Carregar extensão temporária…"** → escolha o
+`manifest.json` desta pasta. Essa forma dura até você fechar o Firefox.
 
 O passo a passo detalhado, em linguagem simples e com solução de problemas, está em
 **[INSTALACAO.md](INSTALACAO.md)**.
@@ -97,7 +91,7 @@ e sem depender de APIs internas e instáveis do YouTube:
 ## Estrutura do projeto
 
 ```
-auvp-play-firefox/
+auvp-tube/
 ├── manifest.json        Configuração da extensão (Manifest V3 para Gecko/Firefox)
 ├── src/
 │   ├── common.js        Canais, leitura do feed, armazenamento e filtros
