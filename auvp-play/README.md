@@ -18,7 +18,7 @@ filtros, ordenação e controle de Shorts.
 ## Como instalar
 
 **Baixe o arquivo assinado:**
-👉 **[Página de download (Releases)](https://github.com/marcos123dev/webapp/releases/latest)**
+👉 **[auvp-play-1.0.1.xpi](https://github.com/marcos123dev/webapp/raw/main/auvp-play/dist/auvp-play-1.0.1.xpi)** — ou pela [página de Releases](https://github.com/marcos123dev/webapp/releases/latest)
 
 Depois, no Firefox: menu **☰** → **Extensões e temas** → **engrenagem ⚙** →
 **"Instalar extensão a partir de arquivo…"** → escolha o `.xpi` baixado → **Adicionar**.
