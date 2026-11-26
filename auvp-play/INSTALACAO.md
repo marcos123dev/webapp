@@ -1,116 +1,58 @@
-# Guia de instalação — passo a passo
+# Como instalar — passo a passo
 
-Escrito para quem não mexe com programação. Leia a **Parte 1** para testar em 2 minutos.
-Depois, se gostar, faça a **Parte 2** para deixar instalado para sempre.
-
----
+Escrito para quem não mexe com programação. Leva uns 2 minutos.
 
 ## Antes de começar
-
-Você recebeu um arquivo chamado **`auvp-play-1.0.1.xpi`**.
-Guarde ele numa pasta fácil de achar, por exemplo a pasta **Downloads**.
-
-Esse arquivo é a extensão inteira. Não precisa descompactar, não precisa abrir.
 
 Você precisa do **Firefox versão 142 ou mais nova** (qualquer Firefox atualizado serve).
 Para conferir: menu **☰** → **Ajuda** → **Sobre o Firefox**.
 
----
-
-## Parte 1 — Testar agora (2 minutos)
-
-Esse jeito funciona na hora, mas a extensão **some quando você fecha o Firefox**.
-É só para você ver se gostou.
-
-1. Abra o **Mozilla Firefox**.
-2. Clique na barra de endereço (onde você digita os sites), apague o que estiver lá e
-   digite exatamente:
-
-   ```
-   about:debugging
-   ```
-
-   Depois aperte **Enter**.
-3. Vai abrir uma página de ferramentas. No menu do lado esquerdo, clique em
-   **"Este Firefox"**.
-4. Clique no botão **"Carregar extensão temporária…"**.
-5. Vai abrir a janela de escolher arquivo. Procure a pasta onde você salvou e
-   clique duas vezes em **`auvp-play-1.0.1.xpi`**.
-6. Pronto. A extensão aparece na lista e o ícone dela (um quadrado verde-azulado com um
-   "play") aparece na barra de ferramentas do Firefox, lá em cima à direita.
-
-   > Se não aparecer o ícone: clique na peça de quebra-cabeça 🧩 ao lado da barra de
-   > endereço, ache "AUVP Play" e clique no alfinete para fixar na barra.
-7. Abra **youtube.com**. A prateleira da AUVP aparece no topo da página inicial.
-
-**Lembre-se:** ao fechar o Firefox, a extensão é removida. Para instalar de vez,
-siga a Parte 2.
+A extensão é assinada pela Mozilla, então ela instala de forma permanente, como qualquer
+outra extensão. Você não precisa criar conta em lugar nenhum.
 
 ---
 
-## Parte 2 — Instalar para sempre (10 a 15 minutos, uma vez só)
+## Instalar
 
-O Firefox só aceita instalar extensões **assinadas pela Mozilla**. A assinatura é
-**gratuita** e não exige publicar nada: a extensão fica privada, só sua.
+1. **Baixe o arquivo.** Clique aqui:
+   [**auvp-play-1.0.1.xpi**](https://github.com/marcos123dev/webapp/raw/main/auvp-play/dist/auvp-play-1.0.1.xpi)
 
-### 2.1 — Criar a conta (se ainda não tiver)
+   O Firefox vai salvar o arquivo na sua pasta de downloads.
 
-1. Acesse: <https://addons.mozilla.org/pt-BR/firefox/users/register>
-2. Crie a conta com o seu e-mail e confirme pelo link que a Mozilla enviar.
+2. **Abra as extensões.** No Firefox, clique no menu **☰** (três risquinhos, canto
+   superior direito) e depois em **"Extensões e temas"**.
 
-### 2.2 — Enviar a extensão para assinar
-
-1. Acesse: <https://addons.mozilla.org/developers/addon/submit/distribution>
-2. Vai aparecer a pergunta de como você quer distribuir. Escolha a segunda opção:
-   **"Por conta própria"** (em inglês: *On your own*). Clique em **Continuar**.
-
-   > Isso significa "não quero publicar na loja, só quero o arquivo assinado para mim".
-3. Clique em **"Selecione um arquivo…"** e escolha o mesmo arquivo
-   **`auvp-play-1.0.1.xpi`**.
-4. Espere a validação automática terminar (costuma levar menos de um minuto).
-   Avisos amarelos são normais; o que importa é não ter erro vermelho.
-5. Clique em **Continuar** e depois em **Enviar versão**.
-6. Se perguntarem sobre o código-fonte, responda que **não** usa ferramentas de
-   compilação (o código é texto puro, já legível).
-
-### 2.3 — Baixar o arquivo assinado
-
-1. Depois de processar, a página mostra a versão com um botão de **download**
-   (ou um link "Baixar" / ícone de seta). Baixe o arquivo `.xpi` **assinado**.
-   Se demorar, atualize a página depois de 1 ou 2 minutos.
-
-### 2.4 — Instalar no Firefox
-
-1. No Firefox, clique no menu **☰** (três risquinhos, canto superior direito).
-2. Clique em **"Extensões e temas"**.
-3. Clique na **engrenagem ⚙** no topo da página e escolha
+3. **Instale pelo arquivo.** Clique na **engrenagem ⚙** no topo da página e escolha
    **"Instalar extensão a partir de arquivo…"**.
-4. Escolha o `.xpi` **assinado** que você acabou de baixar.
-5. O Firefox pergunta se você quer adicionar e mostra as permissões. Clique em
-   **Adicionar**.
 
-Pronto: agora ela fica instalada mesmo depois de fechar o Firefox.
+4. **Escolha o arquivo** `auvp-play-1.0.1.xpi` que você acabou de baixar.
 
-> **Atalho alternativo (só para quem usa Firefox Developer Edition ou ESR):**
-> digite `about:config` na barra de endereço, aceite o aviso, procure por
-> `xpinstall.signatures.required` e mude para **false**. Depois instale o `.xpi`
-> direto pelo passo 2.4. **Isso não funciona no Firefox normal.**
+5. O Firefox mostra as permissões e pergunta se você quer adicionar. Clique em
+   **Adicionar** e depois em **OK**.
+
+Pronto. Abra o **youtube.com** e a prateleira da AUVP aparece no topo da página inicial.
+
+> **O ícone não apareceu na barra?** Clique na peça de quebra-cabeça 🧩 ao lado da barra
+> de endereço, ache "AUVP Play" e clique no alfinete para fixar.
 
 ---
 
 ## Como usar
 
-- **Ícone da extensão (barra do Firefox):** abre o menu com todas as opções —
-  ligar/desligar a prateleira, escolher canais, ocultar recomendações, ocultar Shorts,
-  ocultar assistidos, atualizar os vídeos e limpar o histórico.
+- **Ícone da extensão, na barra do Firefox:** abre o menu com todas as opções — ligar e
+  desligar a prateleira, escolher os canais, ocultar as recomendações, ocultar os Shorts,
+  ocultar os assistidos, atualizar os vídeos e limpar o histórico.
 - **Na página inicial do YouTube:**
   - as **pílulas coloridas** ligam e desligam cada canal;
   - o **campo de busca** procura só dentro dos vídeos da AUVP;
   - **▶ Reproduzir fila** abre todos os vídeos listados em sequência no YouTube;
-  - **☆ Assistir depois** salva na sua lista; **★ Minha lista** abre essa lista como fila;
+  - **☆ Assistir depois** salva na sua lista, e **★ Minha lista** abre essa lista como fila;
   - **⇪ Compartilhar** copia o link do vídeo;
   - **▴** recolhe a prateleira.
 - O **número verde no ícone** mostra quantos vídeos da AUVP você ainda não assistiu.
+
+Cada opção liga e desliga separadamente. Dá, por exemplo, para tirar os Shorts e manter
+as recomendações normais do YouTube.
 
 ---
 
@@ -118,18 +60,32 @@ Pronto: agora ela fica instalada mesmo depois de fechar o Firefox.
 
 | Problema | O que fazer |
 |---|---|
-| A prateleira não aparece | Atualize a página do YouTube (tecla **F5**). Confirme que está em `youtube.com`, na página inicial. |
+| A prateleira não aparece | Atualize a página do YouTube (tecla **F5**). Confirme que está na página inicial do `youtube.com`. |
 | Aparece "Nenhum vídeo carregado" | Clique em **Atualizar** na prateleira, ou abra o ícone da extensão e clique em **Atualizar vídeos**. |
 | O ícone sumiu da barra | Clique na peça 🧩 ao lado da barra de endereço, ache "AUVP Play" e fixe na barra. |
 | As recomendações sumiram e eu não quis isso | Abra o ícone da extensão e desmarque **"Ocultar o feed de recomendações"**. |
-| Instalei pela Parte 1 e sumiu | É o esperado: o modo temporário dura só até fechar o Firefox. Faça a Parte 2. |
-| O Firefox diz que a extensão não pôde ser verificada | Você tentou instalar o arquivo **não assinado** pelo passo 2.4. Use a Parte 1 para testar, ou conclua a assinatura da Parte 2. |
+| O Firefox diz que a extensão não pôde ser verificada | Você provavelmente baixou um arquivo diferente. Use o link do passo 1. |
+| Meu Firefox é mais antigo que o 142 | Atualize o Firefox: menu **☰** → **Ajuda** → **Sobre o Firefox**. |
 
----
+## Atualizar para uma versão nova
+
+Esta extensão não é instalada pela loja da Mozilla, então ela **não se atualiza sozinha**.
+Quando sair uma versão nova, basta repetir os passos de instalação com o arquivo novo: as
+suas preferências e a sua lista de "assistir depois" são mantidas.
 
 ## Como desinstalar
 
-Menu **☰** → **Extensões e temas** → ache **AUVP Play** → botão **…** → **Remover**.
+Menu **☰** → **Extensões e temas** → ache **AUVP Play (não oficial)** → botão **…** →
+**Remover**.
+
+---
+
+## Para quem é da área
+
+O código-fonte completo está neste repositório. Para rodar sem instalar, abra
+`about:debugging` → **"Este Firefox"** → **"Carregar extensão temporária…"** e escolha o
+`manifest.json`. Os testes ficam em `tests/` (`node tests/test-parser.js`) e o pacote é
+gerado com `web-ext build`.
 
 ---
 
