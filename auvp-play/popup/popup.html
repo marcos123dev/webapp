@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>AUVP Play (não oficial)</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="head">
+    <span class="logo" aria-hidden="true"></span>
+    <div class="head-text">
+      <h1>AUVP Play</h1>
+      <p class="sub">versão não oficial <span id="version"></span></p>
+    </div>
+  </header>
+
+  <main>
+    <section class="block">
+      <h2>Página inicial do YouTube</h2>
+      <div class="rows" id="rows-home"></div>
+    </section>
+
+    <section class="block">
+      <h2>Canais na prateleira</h2>
+      <div class="chips" id="channels"></div>
+      <label class="field">
+        <span>Ordenar por</span>
+        <select id="sortOrder">
+          <option value="recent">Mais recentes</option>
+          <option value="oldest">Mais antigos</option>
+          <option value="views">Mais vistos</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="block">
+      <h2>Shorts</h2>
+      <div class="rows" id="rows-shorts"></div>
+    </section>
+
+    <section class="block">
+      <h2>Já assistidos</h2>
+      <div class="rows" id="rows-watched"></div>
+    </section>
+
+    <section class="block">
+      <h2>Situação</h2>
+      <dl class="stats">
+        <div><dt>Vídeos carregados</dt><dd id="stat-videos">—</dd></div>
+        <div><dt>Última atualização</dt><dd id="stat-updated">—</dd></div>
+        <div><dt>Marcados como vistos</dt><dd id="stat-watched">—</dd></div>
+        <div><dt>Na minha lista</dt><dd id="stat-later">—</dd></div>
+      </dl>
+      <p class="msg" id="message" role="status"></p>
+      <div class="buttons">
+        <button type="button" id="btn-refresh" class="btn btn-primary">Atualizar vídeos</button>
+        <button type="button" id="btn-open" class="btn">Abrir o YouTube</button>
+        <button type="button" id="btn-playlist" class="btn">Reproduzir minha lista</button>
+        <button type="button" id="btn-clear" class="btn btn-quiet">Limpar histórico de assistidos</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p class="credit" id="credit"></p>
+    <p class="links">
+      <a id="link-original" href="#" target="_blank" rel="noopener noreferrer">Extensão original no Chrome</a>
+      <a id="link-auvp" class="cta" href="#" target="_blank" rel="noopener noreferrer">Seja aluno</a>
+    </p>
+  </footer>
+
+  <script src="../src/common.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

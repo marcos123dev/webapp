@@ -1,0 +1,66 @@
+{
+  "manifest_version": 3,
+  "name": "AUVP Play (não oficial)",
+  "version": "1.0.0",
+  "author": "Matheus Satake de Souza (autor da extensão original para Chrome) — versão não oficial",
+  "description": "Vídeos dos canais Investidor Sardinha, AUVP Capital, AUVP Agro e AUVP Atlas no topo da home do YouTube, com busca, filtros e controle de Shorts. Versão não oficial baseada na extensão original para Chrome de Matheus Satake de Souza.",
+  "homepage_url": "https://chromewebstore.google.com/detail/auvp-play/akjmabmimndjlnbgficabihjclinbpdc",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "auvp-play-unofficial@local.addon",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "permissions": [
+    "storage",
+    "alarms",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
+  "background": {
+    "scripts": [
+      "src/common.js",
+      "src/background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.youtube.com/*",
+        "*://m.youtube.com/*"
+      ],
+      "js": [
+        "src/common.js",
+        "src/content.js"
+      ],
+      "css": [
+        "src/content.css"
+      ],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  "action": {
+    "default_title": "AUVP Play (não oficial)",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  }
+}

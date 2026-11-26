@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UCM3vJxmuJJkk1r0yzFI9eZg"/>
+ <id>yt:channel:M3vJxmuJJkk1r0yzFI9eZg</id>
+ <yt:channelId>M3vJxmuJJkk1r0yzFI9eZg</yt:channelId>
+ <title>Investidor Sardinha l Raul Sena</title>
+ <link rel="alternate" href="https://www.youtube.com/channel/UCM3vJxmuJJkk1r0yzFI9eZg"/>
+ <author>
+  <name>Investidor Sardinha l Raul Sena</name>
+  <uri>https://www.youtube.com/channel/UCM3vJxmuJJkk1r0yzFI9eZg</uri>
+ </author>
+ <published>2019-07-23T02:44:30+00:00</published>
+ <entry>
+  <id>yt:video:nVtC7ZiQhgk</id>
+  <yt:videoId>nVtC7ZiQhgk</yt:videoId>
+  <yt:channelId>UCM3vJxmuJJkk1r0yzFI9eZg</yt:channelId>
+  <title>A bolsa de valores é igual um cassino?</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=nVtC7ZiQhgk"/>
+  <author>
+   <name>Investidor Sardinha l Raul Sena</name>
+   <uri>https://www.youtube.com/channel/UCM3vJxmuJJkk1r0yzFI9eZg</uri>
+  </author>
+  <published>2026-11-25T21:58:13+00:00</published>
+  <updated>2026-11-25T21:58:14+00:00</updated>
+  <media:group>
+   <media:title>A bolsa de valores é igual um cassino?</media:title>
+   <media:content url="https://www.youtube.com/v/nVtC7ZiQhgk?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/nVtC7ZiQhgk/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Aprenda a investir: debêntures &amp; renda fixa. Preço &lt; valor.</media:description>
+   <media:community>
+    <media:starRating count="1974" average="5.00" min="1" max="5"/>
+    <media:statistics views="9404"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:AbC-123_xyZ</id>
+  <yt:videoId>AbC-123_xyZ</yt:videoId>
+  <yt:channelId>UCM3vJxmuJJkk1r0yzFI9eZg</yt:channelId>
+  <title>Lula declarou guerra ao mercado &amp; quem paga é você</title>
+  <author>
+   <name>Investidor Sardinha l Raul Sena</name>
+  </author>
+  <published>2026-11-20T10:00:00+00:00</published>
+  <media:group>
+   <media:title>Lula declarou guerra</media:title>
+   <media:thumbnail url="https://i3.ytimg.com/vi/AbC-123_xyZ/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Sem community stats aqui.</media:description>
+  </media:group>
+ </entry>
+</feed>

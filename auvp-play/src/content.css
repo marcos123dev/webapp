@@ -1,0 +1,381 @@
+/*
+ * AUVP Play para Firefox (não oficial) — estilos da prateleira no YouTube
+ *
+ * Port independente para Firefox, baseado na extensão original para Chrome
+ * "AUVP Play", criada por Matheus Satake de Souza.
+ *
+ * CSS injetado pela extensão (não é afetado pela CSP da página).
+ * Suporta o tema claro e o tema escuro do YouTube.
+ */
+
+/* ---------- ocultar o feed de recomendações da home ---------- */
+html[data-auvp-hide-recs="1"] ytd-browse[page-subtype="home"] ytd-rich-grid-renderer,
+html[data-auvp-hide-recs="1"] ytd-browse[page-subtype="home"] #header.ytd-rich-grid-renderer {
+  display: none !important;
+}
+
+/* ---------- ocultar Shorts em todo o YouTube ---------- */
+html[data-auvp-hide-shorts="1"] ytd-rich-shelf-renderer[is-shorts],
+html[data-auvp-hide-shorts="1"] ytd-reel-shelf-renderer,
+html[data-auvp-hide-shorts="1"] ytd-reel-item-renderer,
+html[data-auvp-hide-shorts="1"] ytm-shorts-lockup-view-model,
+html[data-auvp-hide-shorts="1"] ytm-shorts-lockup-view-model-v2,
+html[data-auvp-hide-shorts="1"] grid-shelf-view-model,
+html[data-auvp-hide-shorts="1"] [data-auvp-hidden="1"],
+html[data-auvp-hide-shorts="1"] ytd-guide-entry-renderer:has(a[href^="/shorts"]),
+html[data-auvp-hide-shorts="1"] ytd-mini-guide-entry-renderer:has(a[href^="/shorts"]),
+html[data-auvp-hide-shorts="1"] ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]),
+html[data-auvp-hide-shorts="1"] yt-tab-shape[tab-title="Shorts"],
+html[data-auvp-hide-shorts="1"] yt-chip-cloud-chip-renderer:has([title="Shorts"]) {
+  display: none !important;
+}
+
+/* ---------- variáveis de tema ---------- */
+#auvp-play-shelf {
+  --auvp-bg: #ffffff;
+  --auvp-bg-soft: #f5f6f8;
+  --auvp-border: #e1e3e8;
+  --auvp-text: #0f1114;
+  --auvp-text-dim: #5f6368;
+  --auvp-accent: #1f9d55;
+  --auvp-chip-text: #0f1114;
+  --auvp-shadow: 0 1px 3px rgba(15, 17, 20, .08);
+}
+
+html[dark] #auvp-play-shelf,
+ytd-app[dark] #auvp-play-shelf,
+html[system-icons][dark] #auvp-play-shelf {
+  --auvp-bg: #17191c;
+  --auvp-bg-soft: #22262b;
+  --auvp-border: #343a40;
+  --auvp-text: #f1f3f4;
+  --auvp-text-dim: #a9afb6;
+  --auvp-accent: #45c07e;
+  --auvp-chip-text: #f1f3f4;
+  --auvp-shadow: none;
+}
+
+/* ---------- contêiner ---------- */
+#auvp-play-shelf {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 0 24px 0;
+  padding: 16px 18px 12px 18px;
+  background: var(--auvp-bg);
+  border: 1px solid var(--auvp-border);
+  border-radius: 14px;
+  box-shadow: var(--auvp-shadow);
+  color: var(--auvp-text);
+  font-family: "Roboto", "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  container-type: inline-size;
+}
+
+#auvp-play-shelf *,
+#auvp-play-shelf *::before,
+#auvp-play-shelf *::after { box-sizing: border-box; }
+
+/* ---------- cabeçalho ---------- */
+#auvp-play-shelf .auvp-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#auvp-play-shelf .auvp-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: .2px;
+}
+
+#auvp-play-shelf .auvp-logo {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #1f9d55, #2f6fed);
+  position: relative;
+}
+
+#auvp-play-shelf .auvp-logo::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 5px 0 5px 8px;
+  border-color: transparent transparent transparent #fff;
+}
+
+#auvp-play-shelf .auvp-count {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--auvp-text-dim);
+  background: var(--auvp-bg-soft);
+  border: 1px solid var(--auvp-border);
+  border-radius: 999px;
+  padding: 2px 9px;
+}
+
+#auvp-play-shelf .auvp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+#auvp-play-shelf .auvp-search,
+#auvp-play-shelf .auvp-select {
+  font: inherit;
+  color: var(--auvp-text);
+  background: var(--auvp-bg-soft);
+  border: 1px solid var(--auvp-border);
+  border-radius: 8px;
+  padding: 7px 10px;
+  min-height: 34px;
+}
+
+#auvp-play-shelf .auvp-search { width: 230px; max-width: 48vw; }
+#auvp-play-shelf .auvp-search::placeholder { color: var(--auvp-text-dim); }
+#auvp-play-shelf .auvp-search:focus-visible,
+#auvp-play-shelf .auvp-select:focus-visible,
+#auvp-play-shelf button:focus-visible {
+  outline: 2px solid var(--auvp-accent);
+  outline-offset: 1px;
+}
+
+#auvp-play-shelf .auvp-btn {
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--auvp-text);
+  background: var(--auvp-bg-soft);
+  border: 1px solid var(--auvp-border);
+  border-radius: 8px;
+  padding: 7px 12px;
+  min-height: 34px;
+  white-space: nowrap;
+  transition: filter .12s ease;
+}
+
+#auvp-play-shelf .auvp-btn:hover:not(:disabled) { filter: brightness(.95); }
+html[dark] #auvp-play-shelf .auvp-btn:hover:not(:disabled) { filter: brightness(1.25); }
+#auvp-play-shelf .auvp-btn:disabled { opacity: .6; cursor: progress; }
+
+#auvp-play-shelf .auvp-btn-accent {
+  background: var(--auvp-accent);
+  border-color: var(--auvp-accent);
+  color: #fff;
+}
+
+#auvp-play-shelf .auvp-btn-icon { padding: 7px 10px; font-size: 12px; }
+#auvp-play-shelf .auvp-btn-wide { width: 100%; }
+
+/* ---------- filtros ---------- */
+#auvp-play-shelf .auvp-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  margin: 12px 0 4px 0;
+}
+
+#auvp-play-shelf .auvp-chip {
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--auvp-chip-text);
+  background: transparent;
+  border: 1.5px solid var(--auvp-border);
+  border-radius: 999px;
+  padding: 5px 12px;
+  opacity: .62;
+}
+
+#auvp-play-shelf .auvp-chip:hover { opacity: .85; }
+#auvp-play-shelf .auvp-chip-on { color: #fff; opacity: 1; }
+#auvp-play-shelf .auvp-chip-plain { border-color: var(--auvp-border); }
+#auvp-play-shelf .auvp-chip-on-plain {
+  opacity: 1;
+  background: var(--auvp-bg-soft);
+  border-color: var(--auvp-accent);
+}
+
+#auvp-play-shelf .auvp-stamp {
+  font-size: 11.5px;
+  color: var(--auvp-text-dim);
+  margin-left: auto;
+}
+
+/* ---------- grade ---------- */
+#auvp-play-shelf .auvp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 16px 14px;
+  margin: 14px 0 6px 0;
+}
+
+#auvp-play-shelf.auvp-is-collapsed .auvp-grid,
+#auvp-play-shelf.auvp-is-collapsed .auvp-chips,
+#auvp-play-shelf.auvp-is-collapsed .auvp-more,
+#auvp-play-shelf.auvp-is-collapsed .auvp-foot { display: none !important; }
+
+#auvp-play-shelf .auvp-card { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+#auvp-play-shelf .auvp-card-watched .auvp-thumb { opacity: .55; }
+
+#auvp-play-shelf .auvp-thumb {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--auvp-bg-soft);
+  text-decoration: none;
+}
+
+#auvp-play-shelf .auvp-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: 0;
+}
+
+#auvp-play-shelf .auvp-flag {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  color: #fff;
+  background: rgba(15, 17, 20, .82);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+#auvp-play-shelf .auvp-meta { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+
+#auvp-play-shelf .auvp-title {
+  color: var(--auvp-text);
+  font-weight: 600;
+  font-size: 13.5px;
+  line-height: 1.3;
+  text-decoration: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#auvp-play-shelf .auvp-title:hover { text-decoration: underline; }
+
+#auvp-play-shelf .auvp-sub {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--auvp-text-dim);
+}
+
+#auvp-play-shelf .auvp-chan { font-weight: 600; }
+#auvp-play-shelf .auvp-dot { opacity: .6; }
+
+#auvp-play-shelf .auvp-btns { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 2px; }
+
+#auvp-play-shelf .auvp-mini {
+  font: inherit;
+  font-size: 11.5px;
+  cursor: pointer;
+  color: var(--auvp-text-dim);
+  background: var(--auvp-bg-soft);
+  border: 1px solid var(--auvp-border);
+  border-radius: 6px;
+  padding: 3px 8px;
+  white-space: nowrap;
+}
+
+#auvp-play-shelf .auvp-mini:hover { color: var(--auvp-text); }
+#auvp-play-shelf .auvp-mini-on {
+  color: var(--auvp-accent);
+  border-color: var(--auvp-accent);
+  font-weight: 600;
+}
+
+#auvp-play-shelf .auvp-empty,
+#auvp-play-shelf .auvp-warn {
+  grid-column: 1 / -1;
+  margin: 10px 0;
+  font-size: 13px;
+  color: var(--auvp-text-dim);
+}
+
+#auvp-play-shelf .auvp-warn { color: #c2410c; }
+html[dark] #auvp-play-shelf .auvp-warn { color: #fb923c; }
+
+#auvp-play-shelf .auvp-more { margin: 8px 0 4px 0; }
+
+/* ---------- rodapé (créditos) ---------- */
+#auvp-play-shelf .auvp-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--auvp-border);
+  font-size: 11.5px;
+  color: var(--auvp-text-dim);
+}
+
+#auvp-play-shelf .auvp-foot-links { display: flex; align-items: center; gap: 12px; }
+#auvp-play-shelf .auvp-link { color: var(--auvp-text-dim); text-decoration: underline; }
+#auvp-play-shelf .auvp-link:hover { color: var(--auvp-text); }
+
+#auvp-play-shelf .auvp-cta {
+  color: #fff;
+  background: var(--auvp-accent);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ---------- aviso flutuante ---------- */
+.auvp-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
+  z-index: 2147483647;
+  max-width: 86vw;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #17191c;
+  color: #f1f3f4;
+  font-family: "Roboto", "Segoe UI", Arial, sans-serif;
+  font-size: 13px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .35);
+  pointer-events: none;
+}
+
+.auvp-clip { position: fixed; left: -9999px; top: 0; opacity: 0; }
+
+/* ---------- telas estreitas ---------- */
+@media (max-width: 900px) {
+  #auvp-play-shelf { padding: 12px; border-radius: 10px; }
+  #auvp-play-shelf .auvp-search { width: 100%; max-width: none; }
+  #auvp-play-shelf .auvp-actions { width: 100%; }
+  #auvp-play-shelf .auvp-grid { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
+}
