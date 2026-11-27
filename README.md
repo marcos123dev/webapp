@@ -15,7 +15,7 @@ extensão AUVP Play para Chrome, de Matheus Satake de Souza**
 ([página na Chrome Web Store](https://chromewebstore.google.com/detail/auvp-play/akjmabmimndjlnbgficabihjclinbpdc)).
 Versão **não oficial**, sem vínculo com o autor original, com a AUVP ou com os canais citados.
 
-- ⬇️ Em publicação na loja da Mozilla — o link de instalação entra aqui assim que sair
+- ⬇️ **[Baixar a extensão (assinada pela Mozilla)](https://github.com/marcos123dev/webapp/raw/main/auvp-tube/dist/auvp-tube-1.0.2.xpi)**
 - 📘 [Como instalar, passo a passo](auvp-tube/INSTALACAO.md)
 - 📄 [Documentação do projeto](auvp-tube/README.md)
 - 🙏 [Créditos e inspiração](auvp-tube/CREDITS.md)

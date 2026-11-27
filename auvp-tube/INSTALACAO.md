@@ -14,9 +14,10 @@ outra extensão. Você não precisa criar conta em lugar nenhum.
 
 ## Instalar
 
-1. **Baixe o arquivo.** O AUVP Tube está em processo de publicação na loja da Mozilla.
-   Assim que sair, o link de download aparece aqui e no
-   [README](README.md).
+1. **Baixe o arquivo.** Clique aqui:
+   [**auvp-tube-1.0.2.xpi**](https://github.com/marcos123dev/webapp/raw/main/auvp-tube/dist/auvp-tube-1.0.2.xpi)
+
+   O Firefox vai salvar o arquivo na sua pasta de downloads.
 
 2. **Abra as extensões.** No Firefox, clique no menu **☰** (três risquinhos, canto
    superior direito) e depois em **"Extensões e temas"**.

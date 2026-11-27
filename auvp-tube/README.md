@@ -14,12 +14,18 @@ filtros, ordenação e controle de Shorts.
 
 ## Como instalar
 
-**Em publicação na loja da Mozilla.** Assim que sair, o link de instalação aparece aqui —
-e a partir dele a extensão passa a se atualizar sozinha.
+**Baixe o arquivo assinado:**
+👉 **[auvp-tube-1.0.2.xpi](https://github.com/marcos123dev/webapp/raw/main/auvp-tube/dist/auvp-tube-1.0.2.xpi)**
 
-Enquanto a publicação não sai, quem quiser testar pode carregar o código direto:
-`about:debugging` → **"Este Firefox"** → **"Carregar extensão temporária…"** → escolha o
-`manifest.json` desta pasta. Essa forma dura até você fechar o Firefox.
+Depois, no Firefox: menu **☰** → **Extensões e temas** → **engrenagem ⚙** →
+**"Instalar extensão a partir de arquivo…"** → escolha o arquivo baixado → **Adicionar**.
+
+O arquivo é assinado pela Mozilla, então instala de forma permanente. Requer
+**Firefox 142 ou mais recente**.
+
+> A versão 1.1.0 está a caminho da loja da Mozilla. Quando a publicação sair, a instalação
+> passa a ser por lá, com atualização automática — e quem instalou esta versão vai precisar
+> reinstalar uma vez, porque o identificador interno da extensão mudou.
 
 O passo a passo detalhado, em linguagem simples e com solução de problemas, está em
 **[INSTALACAO.md](INSTALACAO.md)**.
